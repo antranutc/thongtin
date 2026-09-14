@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quản lý khách hàng</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ====================================== -->
+<!-- HEADER -->
+<!-- ====================================== -->
+
+<header class="header">
+
+    <div class="header-inner">
+
+        <h1>
+            Quản lý khách hàng
+        </h1>
+
+        <div class="header-subtitle">
+            Tra cứu thông tin thiết bị
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ====================================== -->
+<!-- MÀN HÌNH DANH SÁCH -->
+<!-- ====================================== -->
+
+<section
+    id="listScreen"
+    class="screen"
+>
+
+    <div class="page-header">
+
+        <div>
+
+            <h2>
+                Danh sách khách hàng
+            </h2>
+
+            <div
+                id="deviceCount"
+                class="device-count"
+            >
+                0 thiết bị
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================ -->
+    <!-- TOOLBAR -->
+    <!-- ================================ -->
+
+    <div class="toolbar">
+
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Nhập tên, SĐT, ID, ID Device..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <!-- SEARCH BUTTON -->
+
+        <button
+            id="searchButton"
+            class="search-button"
+            type="button"
+        >
+            🔍 Tìm kiếm
+        </button>
+
+
+        <!-- TYPE FILTER -->
+
+        <select
+            id="typeFilter"
+        >
+
+            <option value="all">
+                Tất cả
+            </option>
+
+            <option value="WiFi">
+                WiFi
+            </option>
+
+            <option value="4G">
+                4G
+            </option>
+
+        </select>
+
+
+        <!-- ADD CUSTOMER -->
+
+        <button
+            id="addCustomerButton"
+            class="add-button"
+            type="button"
+        >
+            ＋ Thêm khách hàng
+        </button>
+
+
+    </div>
+
+
+    <!-- ================================ -->
+    <!-- DANH SÁCH -->
+    <!-- ================================ -->
+
+    <div
+        id="deviceList"
+        class="device-list"
+    >
+    </div>
+
+
+    <!-- EMPTY -->
+
+    <div
+        id="emptyMessage"
+        class="empty-message hidden"
+    >
+        Không tìm thấy thiết bị.
+    </div>
+
+
+</section>
+
+
+
+<!-- ====================================== -->
+<!-- MÀN HÌNH CHI TIẾT -->
+<!-- ====================================== -->
+
+<section
+    id="detailScreen"
+    class="screen hidden"
+>
+
+
+    <!-- ================================ -->
+    <!-- DETAIL HEADER -->
+    <!-- ================================ -->
+
+    <div class="detail-header">
+
+
+        <button
+            id="backButton"
+            class="back-button"
+            type="button"
+        >
+            ← Quay lại
+        </button>
+
+
+        <h2 id="detailTitle">
+            Chi tiết khách hàng
+        </h2>
+
+
+    </div>
+
+
+
+    <!-- ================================ -->
+    <!-- DETAIL CONTENT -->
+    <!-- ================================ -->
+
+    <div class="detail-container">
+
+
+        <!-- TÊN -->
+
+        <div class="detail-row">
+
+            <label>
+                Tên
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailName"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailName"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SĐT -->
+
+        <div class="detail-row">
+
+            <label>
+                Số điện thoại
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailPhone"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailPhone"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ID -->
+
+        <div class="detail-row">
+
+            <label>
+                ID
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailId"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailId"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- WEB -->
+
+        <div class="detail-row">
+
+            <label>
+                Địa chỉ web
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailWeb"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailWeb"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- DEVICE ID -->
+
+        <div class="detail-row">
+
+            <label>
+                ID Device
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailDeviceId"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailDeviceId"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- TYPE -->
+
+        <div class="detail-row">
+
+            <label>
+                Loại
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailType"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailType"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QR CODE TEXT -->
+
+        <div class="detail-row">
+
+            <label>
+                Mã QR
+            </label>
+
+            <div class="copy-row">
+
+                <input
+                    id="detailQrCode"
+                    type="text"
+                    readonly
+                >
+
+                <button
+                    class="copy-button"
+                    data-copy="detailQrCode"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- QR -->
+
+        <div class="qr-section">
+
+            <label>
+                QR Code
+            </label>
+
+            <div
+                id="qrCode"
+                class="qr-code"
+            >
+            </div>
+
+        </div>
+
+
+
+        <!-- GHI CHÚ -->
+
+        <div class="detail-row">
+
+            <label>
+                Ghi chú
+            </label>
+
+            <div class="copy-row">
+
+                <textarea
+                    id="detailNote"
+                    readonly
+                    rows="4"
+                ></textarea>
+
+                <button
+                    class="copy-button"
+                    data-copy="detailNote"
+                    type="button"
+                >
+                    Copy
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================================ -->
+        <!-- ACTION BUTTONS -->
+        <!-- ================================ -->
+
+        <div class="detail-actions">
+
+
+            <button
+                id="copyAllButton"
+                class="copy-all-button"
+                type="button"
+            >
+                📋 Copy tất cả
+            </button>
+
+
+            <button
+                id="openWebButton"
+                class="open-web-button"
+                type="button"
+            >
+                🌐 Mở website
+            </button>
+
+
+            <button
+                id="deleteCustomerButton"
+                class="delete-button"
+                type="button"
+            >
+                🗑 Xóa khách hàng
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ====================================== -->
+<!-- MÀN HÌNH THÊM KHÁCH HÀNG -->
+<!-- ====================================== -->
+
+<section
+    id="addScreen"
+    class="screen hidden"
+>
+
+
+    <!-- ================================ -->
+    <!-- HEADER -->
+    <!-- ================================ -->
+
+    <div class="detail-header">
+
+
+        <button
+            id="cancelAddButton"
+            class="back-button"
+            type="button"
+        >
+            ← Quay lại
+        </button>
+
+
+        <h2>
+            Thêm khách hàng
+        </h2>
+
+
+    </div>
+
+
+
+    <!-- ================================ -->
+    <!-- FORM -->
+    <!-- ================================ -->
+
+    <div class="detail-container">
+
+
+        <!-- TÊN -->
+
+        <div class="form-group">
+
+            <label>
+                Tên
+            </label>
+
+            <input
+                type="text"
+                id="addName"
+                placeholder="Nhập tên khách hàng"
+            >
+
+        </div>
+
+
+
+        <!-- SĐT -->
+
+        <div class="form-group">
+
+            <label>
+                Số điện thoại
+            </label>
+
+            <input
+                type="text"
+                id="addPhone"
+                placeholder="Nhập số điện thoại"
+            >
+
+        </div>
+
+
+
+        <!-- ID -->
+
+        <div class="form-group">
+
+            <label>
+                ID
+            </label>
+
+            <input
+                type="text"
+                id="addId"
+                placeholder="Ví dụ: KH004"
+            >
+
+        </div>
+
+
+
+        <!-- WEB -->
+
+        <div class="form-group">
+
+            <label>
+                Địa chỉ web
+            </label>
+
+            <input
+                type="text"
+                id="addWeb"
+                placeholder="https://..."
+            >
+
+        </div>
+
+
+
+        <!-- DEVICE ID -->
+
+        <div class="form-group">
+
+            <label>
+                ID Device
+            </label>
+
+            <input
+                type="text"
+                id="addDeviceId"
+                placeholder="Ví dụ: ESP32_004"
+            >
+
+        </div>
+
+
+
+        <!-- TYPE -->
+
+        <div class="form-group">
+
+            <label>
+                Loại
+            </label>
+
+            <select
+                id="addType"
+            >
+
+                <option value="WiFi">
+                    WiFi
+                </option>
+
+                <option value="4G">
+                    4G
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <!-- QR -->
+
+        <div class="form-group">
+
+            <label>
+                Mã QR
+            </label>
+
+            <input
+                type="text"
+                id="addQrCode"
+                placeholder="Nội dung mã QR"
+            >
+
+        </div>
+
+
+
+        <!-- NOTE -->
+
+        <div class="form-group">
+
+            <label>
+                Ghi chú
+            </label>
+
+            <textarea
+                id="addNote"
+                placeholder="Nhập ghi chú"
+                rows="4"
+            ></textarea>
+
+        </div>
+
+
+
+        <!-- ================================ -->
+        <!-- BUTTONS -->
+        <!-- ================================ -->
+
+        <div class="add-actions">
+
+
+            <button
+                id="saveCustomerButton"
+                class="save-button"
+                type="button"
+            >
+                💾 Lưu khách hàng
+            </button>
+
+
+            <button
+                id="cancelCustomerButton"
+                class="cancel-button"
+                type="button"
+            >
+                Hủy
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ====================================== -->
+<!-- TOAST -->
+<!-- ====================================== -->
+
+<div
+    id="toast"
+    class="toast"
+>
+</div>
+
+
+
+<!-- ====================================== -->
+<!-- QR CODE LIBRARY -->
+<!-- ====================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"
+></script>
+
+
+<!-- ====================================== -->
+<!-- APP JS -->
+<!-- ====================================== -->
+
+<script
+    src="app.js"
+></script>
+
+
+</body>
+
+</html>
+```
