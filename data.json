@@ -3,7 +3,7 @@
     {
         "name": "HÀ BẮC TRẠM SẠC CAFFE68",
         "phone": "0912211856",
-        "id": "catthanh/cmnd/ws/5678/1234/704bca908060",
+        "id": "catthanh/cmnd/ws/5678/1234/704bca908060/",
         "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiI3MDRiY2E5MDgwNjAiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
         "deviceId": "MT20250902412",
         "type": "4G",
@@ -21,14 +21,14 @@
         "note": "a HƯNG THÁI NGUYÊN"
     },
     {
-        "name": "Trần Văn C",
-        "phone": "0912345678",
-        "id": "KH003",
-        "web": "https://example.com/device003",
-        "deviceId": "ESP32_003",
+        "name": "Nguyễn Vy Viễn",
+        "phone": "0949290039",
+        "id": "catthanh/cmnd/ws/5678/1234/10521c9c4638/",
+        "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiIxMDUyMWM5YzQ2MzgiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
+        "deviceId": "Y6W20260414528",
         "type": "WiFi",
         "qrCode": "KH003",
-        "note": "Thiết bị dự phòng"
+        "note": "Anh Viễn Quảng Ngãi"
     }
 ]
 
