@@ -38,7 +38,37 @@
         "deviceId": "Y6W20260545542",
         "type": "WiFi",
         "qrCode": "KH003",
-        "note": "TRAM 107 THANH XUÂN 1/10/2026"
+        "note": "TRAM 107 THANH XUÂN 1/10/2026 đã đổi sang tài khoản hà linH Y6W20260545545 "
+    },
+      {
+        "name": "TRẠM SẠC XANH NGỌC TÙNG THANH HÓA",        
+        "phone": "0949290039",
+        "id": "catthanh/cmnd/ws/5678/1234/246f2839b25c/",
+        "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiIyNDZmMjgzOWIyNWMiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
+        "deviceId": "Y6W20260545546",
+        "type": "WiFi",
+        "qrCode": "KH003",
+        "note": "TRẠM SẠC XANH NGỌC TÙNG THANH HÓA 24/10/26"
+    },
+     {
+        "name": "TRẠM SẠC XANH HCM ANH  HỒ TRÍ",        
+        "phone": "0949290039",
+        "id": "catthanh/cmnd/ws/5678/1234/e831cd1279d8/state",
+        "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiJlODMxY2QxMjc5ZDgiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
+        "deviceId": "Y6W20260545549",
+        "type": "WiFi",
+        "qrCode": "KH003",
+        "note": "TRẠM SẠC XANH HCM 24/10/26"
+    },
+    {
+        "name": "TRẠM SẠC VMC ",        
+        "phone": "0949290039",
+        "id": "catthanh/cmnd/ws/5678/1234/10521c9c4810/state",
+        "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiIxMDUyMWM5YzQ4MTAiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
+        "deviceId": "Y6W20260545549",
+        "type": "WiFi",
+        "qrCode": "KH003",
+        "note": "TRẠM SẠC XANH VMC"
     }
 ]
 
