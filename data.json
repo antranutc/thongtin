@@ -51,7 +51,7 @@
         "note": "TRẠM SẠC XANH NGỌC TÙNG THANH HÓA 24/10/26"
     },
      {
-        "name": "TRẠM SẠC XANH HCM ANH  HỒ TRÍ",        
+        "name": "TRẠM SẠC XANH HCM ANH  HỒ TRÍ MÁY MASSAGER ",        
         "phone": "0949290039",
         "id": "catthanh/cmnd/ws/5678/1234/e831cd1279d8/state",
         "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiJlODMxY2QxMjc5ZDgiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
@@ -59,6 +59,26 @@
         "type": "WiFi",
         "qrCode": "KH003",
         "note": "TRẠM SẠC XANH HCM 24/10/26"
+    },
+    {
+        "name": "TRẠM SẠC XANH HCM ANH  HỒ TRÍ MÁY NƯỚC NÓNG ",        
+        "phone": "0949290039",
+        "id": "catthanh/cmnd/ws/5678/1234/3083984777b8/state",
+        "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiIzMDgzOTg0Nzc3YjgiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
+        "deviceId": "Y6W20260545547",
+        "type": "WiFi",
+        "qrCode": "KH003",
+        "note": "TRẠM SẠC XANH HCM máy nước nóng 5/11/26"
+    },
+      {
+        "name": "TRẠM SẠC VŨ VĂN TỴ (ANH TUẤN CHỈNH)",        
+        "phone": "0968686791",
+        "id": "catthanh/cmnd/ws/5678/1234/90380cdaf784/state",
+        "web": "https://tramsac.github.io/main/?ls=eyJkZXZpY2VfaWQiOiI5MDM4MGNkYWY3ODQiLCJtdXJsIjoid3NzOi8vYnJva2VyLmhpdmVtcS5jb206ODg4NC9tcXR0IiwidXNlcl9pZCI6IjEyMzQiLCJob21lX2lkIjoiNTY3OCIsImFwcF9pZCI6ImNhdHRoYW5oIn0",
+        "deviceId": "Y6W20260545543",
+        "type": "WiFi",
+        "qrCode": "KH003",
+        "note": "anh Tuấn chỉnh Facebook ở bắc giang 5/11/26"
     },
     {
         "name": "TRẠM SẠC VMC ",        
